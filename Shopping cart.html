@@ -1,0 +1,324 @@
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/css%20shoppingcart.css">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #ffffff" >
+            <a class="navbar-brand" href="Homepage.html"><img class="w-50" src="image/logo%201.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Featues.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Lookbook.html">Lookbook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item active cart ">
+                        <a class="nav-link" href="Shopping%20cart.html" >Cart  <i class="fa fa-shopping-cart" aria-hidden="true">        <span>0</span></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+            <div class="row mt-5 gx-3">
+                <!-- left side div -->
+                <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                    <div class="card p-4">
+                        <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
+                        <div class="row">
+                            <!-- cart images div -->
+                            <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                <img src="image/lo18-2.jpg" class="img-fluid" alt="cart img">
+                            </div>
+
+
+
+
+                            <!-- cart product details -->
+                            <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                <div class="row">
+                                    <!-- product name  -->
+                                    <div class="col-6 card-title">
+                                        <h1 class="mb-4 product_name">GLASS BOTTLE</h1>
+                                        <p class="mb-2">Product code : DHS2020</p>
+                                        <p class="mb-2">COLOR: BLACK</p>
+                                        <p class="mb-3">SIZE: M</p>
+                                        <p class="price-product" nameProduct="blue">300$</p>
+                                    </div>
+                                    <!-- quantity inc dec -->
+                                    <div class="col-6">
+                                        <ul class="pagination justify-content-end set_quantity">
+                                            <li class="page-item">
+                                                <button class="page-link addCart" method="minus" nameProduct="blue">
+                                                    <i class="fas fa-minus"></i> </button>
+                                            </li>
+                                            <li class="page-item">
+                                                <input type="text" name="" nameProduct="blue"  class="page-link" value="0" id="textbox" >
+                                            </li>
+                                            <li class="page-item">
+                                                <button class="page-link addCart" method="plus" nameProduct="blue"> <i class="fas fa-plus"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //remover move and price -->
+                                <div class="row">
+                                    <div class="col-8 d-flex justify-content-between remove_wish">
+                                        <p><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
+                                        <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end price_money">
+                                        <h3>$<span class="totalPrice" nameProduct="blue">0</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <!-- 2nd cart product -->
+                    <div class="card p-4">
+                        <div class="row">
+                            <!-- cart images div -->
+                            <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                <img src="image/lo24-2.jpg" class="img-fluid" alt="cart img">
+                            </div>
+
+
+
+
+                            <!-- cart product details -->
+                            <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                <div class="row">
+                                    <!-- product name  -->
+                                    <div class="col-6 card-title">
+                                        <h1 class="mb-4 product_name">PEFURME BOTTLE</h1>
+                                        <p class="mb-2">Product code : DHS2020</p>
+                                        <p class="mb-2">COLOR: WHITE</p>
+                                        <p class="mb-3">SIZE: M</p>
+                                        <p class="price-product" nameProduct="green">500$</p>
+                                    </div>
+                                    <!-- quantity inc dec -->
+                                    <div class="col-6">
+                                        <ul class="pagination justify-content-end set_quantity">
+                                            <li class="page-item">
+                                                <button class="page-link addCart" method="minus" nameProduct="green"> <i class="fas fa-minus"></i> </button>
+                                            </li>
+                                            <li class="page-item"><input type="text" nameProduct="green" class="page-link" value="0" id="textbox1" >
+                                            </li>
+                                            <li class="page-item">
+                                                <button class="page-link addCart" nameProduct="green"> <i class="fas fa-plus"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //remover move and price -->
+                                <div class="row">
+                                    <div class="col-8 d-flex justify-content-between remove_wish">
+                                        <p><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
+                                        <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end price_money">
+                                        <h3>$<span class="totalPrice" nameProduct="green" >0</span> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side div -->
+                <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                    <div class="right_side p-3 shadow bg-white">
+                        <h2 class="product_name mb-5">The Total Amount Of</h2>
+                        <div class="price_indiv d-flex justify-content-between">
+                            <p>Product amount</p>
+                            <p>$<span id="product_total_amt">0.00</span></p>
+                        </div>
+                        <div class="price_indiv d-flex justify-content-between">
+                            <p>Shipping Charge</p>
+                            <p>$<span id="shipping_charge">50.0</span></p>
+                        </div>
+                        <hr />
+                        <div class="total-amt d-flex justify-content-between font-weight-bold">
+                            <p>The total amount of (including VAT)</p>
+                            <p>$<span id="total_cart_amt">0.00</span></p>
+                        </div>
+                        <div class="container">
+                            <a class="btn btn-warning" href="Submit-Shopping-cart.html" role="button">Check Out</a>
+                        </div>
+
+                        </div>
+                    </div>
+                
+                </div>
+
+
+                <!-- discount code ends -->
+                <div class="mt-3 shadow p-3 bg-white">
+                    <div class="pt-4">
+                        <h5 class="mb-4">Expected delivery date</h5>
+                        <p>July 27th 2020 - July 29th 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--        Footer-->
+<section class="footer">
+    <div class="container">
+        <footer class="page-footer font-small unique-color-dark" style="background: #F8F9FA">
+
+            <div style="background-color:black">
+                <div class="container">
+
+                    <div class="row py-4 d-flex align-items-center icon">
+
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="mb-0" style="color: white">Get connected with us on social networks!</h6>
+                        </div>
+
+                        <div class="col-md-6 col-lg-7 text-center text-md-right icon" >
+                            <a class="fb-ic" href="https://www.facebook.com/">
+                                <i class="fa fa-facebook-official" style="color: white" ></i>
+                            </a>
+
+                            <a class="tw-ic" href="https://www.twitter.com/">
+                                <i class="fa fa-twitter" style="color: white"></i>
+                            </a>
+
+                            <a class="gplus-ic" href="https://www.instagram.com/">
+                                <i class="fa fa-instagram" style="color: white"></i>
+                            </a>
+
+                            <a class="li-ic" href="https://plus.google.com/">
+                                <i class="fa fa-google-plus" style="color: white"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+
+                <!-- Grid row -->
+                <div class="row mt-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>Welcome to P.E.T Bottle, a leading supplier of bottles and jars.
+                            Our wide selection of high-quality glass, plastic and tin containers provide
+                            top-notch storage solutions.</p>
+
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="background: #F8F9FA">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Products</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a href="About.html">How do I order?</a>
+                        </p>
+                        <p>
+                            <a href="About.html">Do you have discounts?</a>
+                        </p>
+                        <p>
+                            <a href="About.html">What are my shipping charges?</a>
+                        </p>
+                        <p>
+                            <a href="About.html">How is my order shipped?</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Connect us</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="fa fa-map-marker"></i>8 Ton That Thuyet,My Dinh,Ha Noi</p>
+                        <p>
+                            <i class="fa fa-envelope-o"></i>aptech@fpt.com.vn</p>
+                        <p>
+                            <i class="fa fa-phone"></i>+ 01 234 567 88</p>
+                        <p>
+                            <i class="fa fa-mobile"></i>+ 01 234 567 89</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">ADDRESS</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.095182298646!2d105.77955771533217!3d21.02887719314929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b3260b1a8b%3A0x862052392e3f478e!2zOGR1b25nIFTDtG4gVGjhuqV0IFRodXnhur90LCBN4bu5IMSQw6xuaCwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1600341642178!5m2!1svi!2s" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="background-color: black">
+                <a href="https://mdbootstrap.com/" style="color: white">© 2020 Copyright: P.E.T Team</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+</section>
+</div>
+<!-- Optional JavaScript -->
+<!-- Popper.js first, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="js/shopping cart.js"></script>
+</body>
+</html>
